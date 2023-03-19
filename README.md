@@ -59,6 +59,8 @@ Go to **Stack Management>Kibana>Saved Objects** and import the dashboards in the
 * Dashboards can be imported into 8.6.2 only, for versions below, you might get an error from the Elastic Cluster 
 * APM is enabled by default for now. ENABLED setting in config.ini is ignored for now 
 
+# STEP 6 - Filebeat 
+Setup a filebeat with corresponding settings in _filebeat.yml_ to import the python script logs into the same Elastic Cluster where you import the scrapped cost metrics 
 
 # What it will look like  
 <img width="2549" alt="Capture d’écran 2023-03-19 à 14 49 12" src="https://user-images.githubusercontent.com/48563314/226179878-68ae1c16-8be7-469f-a430-caab05398751.png">
