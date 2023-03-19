@@ -54,7 +54,7 @@ nohup /<path to>/ess-billing-ingest.py /<path to>/config.ini >  /dev/null 2>&1
 # STEP 5 - Elastic Cluster - Import Dashboards
 Go to **Stack Management>Kibana>Saved Objects** and import the dashboards in the file _ess.billing.kibana.export.ndjson_
 
-#Known Limitations
+# Known Limitations
 * in case of api.elastic-cloud.com timeout, the script will catch the exception and may stop. You will have to launch it again 
 * Dashboards can be imported into 8.6.2 only, for versions below, you might get an error from the Elastic Cluster 
 * APM is enabled by default for now. ENABLED setting in config.ini is ignored for now 
